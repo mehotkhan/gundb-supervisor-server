@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add hapi inert gundb
+
+PATH: 
+  /home/imanoel/.local/bin/:/opt/android-sdk/emulator:/opt/android-sdk/tools:/home/imanoel/.gobrew/current/bin:/home/imanoel/.gobrew/bin:/home/imanoel/.composer/vendor/bin:/home/imanoel/.local/bin/:/opt/android-sdk/emulator:/opt/android-sdk/tools:/home/imanoel/.gobrew/current/bin:/home/imanoel/.gobrew/bin:/home/imanoel/.composer/vendor/bin:/home/imanoel/.local/bin:/home/imanoel/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/home/imanoel/go/bin:/home/imanoel/go/bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/gundb: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66992:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140763:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141735:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141657:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "gundb-server",
+    "version": "1.0.0",
+    "description": "Simple Gundb Server",
+    "main": "index.js",
+    "author": "Ali Zemani",
+    "license": "MIT",
+    "private": null
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

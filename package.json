@@ -1,0 +1,14 @@
+{
+  "name": "gundb-server",
+  "version": "1.0.0",
+  "description": "Simple Gundb Server",
+  "main": "index.js",
+  "author": "Ali Zemani",
+  "license": "MIT",
+  "private": null,
+  "dependencies": {
+    "gun": "^0.2020.1235",
+    "hapi": "^18.1.0",
+    "inert": "^5.1.3"
+  }
+}
