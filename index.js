@@ -12,10 +12,8 @@
     );
   }
 
-  console.log(__dirname + "/../");
   var gun = Gun({
     web: require("http").createServer(Gun.serve(__dirname)).listen(8765),
-    file: "data",
   });
   module.exports = gun;
 })();
