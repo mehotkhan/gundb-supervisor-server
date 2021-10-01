@@ -13,6 +13,7 @@
 
   var config = {
     port: 8765,
+    file: "data",
   };
 
   config.server = require("http").createServer(Gun.serve(__dirname));
@@ -20,6 +21,7 @@
   var gun = Gun({
     web: config.server.listen(config.port),
     peers: config.peers,
+    file: config.file,
   });
   module.exports = gun;
 })();
