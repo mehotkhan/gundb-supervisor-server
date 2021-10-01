@@ -1,6 +1,7 @@
 (function () {
   var Gun = require("gun");
   var cluster = require("cluster");
+
   if (cluster.isMaster) {
     return (
       cluster.fork() &&
@@ -11,17 +12,10 @@
     );
   }
 
-  var config = {
-    port: 8765,
-    file: "data",
-  };
-
-  config.server = require("http").createServer(Gun.serve(__dirname));
-
+  console.log(__dirname + "/../");
   var gun = Gun({
-    web: config.server.listen(config.port),
-    peers: config.peers,
-    file: config.file,
+    web: require("http").createServer(Gun.serve(__dirname)).listen(8765),
+    file: "data",
   });
   module.exports = gun;
 })();
