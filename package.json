@@ -6,9 +6,24 @@
   "author": "Ali Zemani",
   "license": "MIT",
   "private": null,
+  "type": "module",
   "dependencies": {
+    "@gun-vue/relay": "^0.3.1",
     "gun": "^0.2020.1235",
     "hapi": "^18.1.0",
     "inert": "^5.1.3"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "relay": "node relay.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehotkhan/gundb-supervisor-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mehotkhan/gundb-supervisor-server/issues"
+  },
+  "homepage": "https://github.com/mehotkhan/gundb-supervisor-server#readme"
 }
